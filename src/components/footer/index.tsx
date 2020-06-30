@@ -18,7 +18,9 @@
 import React from 'react';
 import { FaGithub, FaGitter, FaTwitter } from 'react-icons/fa';
 import './style.css';
-const copyright: string = 'Copyright © 2020 Xfers Pte. Ltd.';
+
+const year: number = (new Date()).getFullYear();
+const copyright: string = `Copyright © ${year} Xfers Pte. Ltd.`;
 
 const Footer: React.SFC = () => (
   <footer data-testid="footer" className={'footer'}>
@@ -47,7 +49,12 @@ const Footer: React.SFC = () => (
           </a>
         </li>
       </ul>
-      <span className="text-secondary copyright">{copyright}</span>
+      <span className="text-secondary copyright">
+        {copyright}
+        <br/>
+        Forked from <a href="https://github.com/Zilliqa/nucleus-wallet">Nucleus Wallet</a>.
+
+      </span>
     </div>
   </footer>
 );
