@@ -47,22 +47,6 @@ export const RouterNode = () => (
             path: paths.home,
             component: Home
           },
-          {
-            path: paths.faucet,
-            component: lazy(() => import('./containers/faucet'))
-          },
-          {
-            path: paths.send,
-            component: lazy(() => import('./containers/send'))
-          },
-          {
-            path: paths.generate,
-            component: lazy(() => import('./containers/generate'))
-          },
-          {
-            path: paths.calculate,
-            component: lazy(() => import('./containers/calculate'))
-          }
         ];
 
         return (
