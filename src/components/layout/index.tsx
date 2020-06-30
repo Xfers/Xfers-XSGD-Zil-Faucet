@@ -16,7 +16,6 @@
  */
 
 import React from 'react';
-import Sidebar from '../sidebar';
 import Header from '../header';
 import Footer from '../footer';
 import './style.css';
@@ -27,11 +26,8 @@ const Layout = ({ zilContext, children }) => {
     <div>
       <Header isAuth={isAuth} clearAuth={clearAuth} />
       <div className="layout">
-        <Sidebar />
-        <div className="content-section">
-          {children}
-          <Footer />
-        </div>
+        {children}
+        <Footer />
       </div>
     </div>
   );

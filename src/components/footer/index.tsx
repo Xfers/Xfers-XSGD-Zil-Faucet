@@ -18,7 +18,7 @@
 import React from 'react';
 import { FaGithub, FaGitter, FaTwitter } from 'react-icons/fa';
 import './style.css';
-const copyright: string = 'Copyright © 2019 Zilliqa Research Pte. Ltd.';
+const copyright: string = 'Copyright © 2020 Xfers Pte. Ltd.';
 
 const Footer: React.SFC = () => (
   <footer data-testid="footer" className={'footer'}>
@@ -27,10 +27,10 @@ const Footer: React.SFC = () => (
         <li className="nav-item">
           <a
             className="text-secondary nav-link"
-            href="https://github.com/Zilliqa"
+            href="https://github.com/Xfers"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={'Zilliqa GitHub'}
+            aria-label={'Xfers GitHub'}
           >
             <FaGithub />
           </a>
@@ -38,21 +38,10 @@ const Footer: React.SFC = () => (
         <li className="nav-item">
           <a
             className="text-secondary nav-link"
-            href="https://gitter.im/Zilliqa"
+            href="https://twitter.com/xfers"
             target="_blank"
             rel="noopener noreferrer"
-            aria-label={'Zilliqa Gitter'}
-          >
-            <FaGitter />
-          </a>
-        </li>
-        <li className="nav-item">
-          <a
-            className="text-secondary nav-link"
-            href="https://twitter.com/zilliqa"
-            target="_blank"
-            rel="noopener noreferrer"
-            aria-label={'Zilliqa Twitter'}
+            aria-label={'Xfers Twitter'}
           >
             <FaTwitter />
           </a>
