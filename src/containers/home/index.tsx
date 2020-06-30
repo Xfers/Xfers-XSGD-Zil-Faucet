@@ -17,70 +17,12 @@
 
 import React from 'react';
 import Layout from '../../components/layout';
-import { NODE_URL, CHAIN_ID, MSG_VERSION } from '../../constants';
-import Row from 'reactstrap/lib/Row';
-import Col from 'reactstrap/lib/Col';
-import Disclaimer from '../../components/disclaimer';
-import styled from 'styled-components';
-
-const Container = styled.div`
-  width: 100%;
-  height: 30rem;
-  display: flex;
-  flexdirection: row;
-  justify-content: center;
-  align-items: center;
-  color: #fff;
-  background: linear-gradient(-45deg, #4c54d2, #fe524a, #4c54d2);
-  background-size: 400% 400%;
-  animation: Gradient 15s ease infinite;
-
-  @keyframes Gradient {
-    0% {
-      background-position: 0% 50%;
-    }
-    50% {
-      background-position: 100% 50%;
-    }
-    100% {
-      background-position: 0% 50%;
-    }
-  }
-`;
+import Faucet from '../faucet';
 
 const Home = ({ zilContext }) => {
   return (
     <Layout zilContext={zilContext}>
-      <Container>
-        <div
-          style={{
-            display: 'flex',
-            flexDirection: 'column',
-            textAlign: 'center'
-          }}
-        >
-          <h1 style={{ fontSize: '4rem' }}>Nucleus Wallet</h1>
-          <p>
-            Nucleus Wallet is free, open-source, Zilliqa <b>Test Net</b> Wallet.
-          </p>
-        </div>
-      </Container>
-      <br />
-
-      <div style={{ textAlign: 'center' }}>
-        <small>{`Chain ID: ${CHAIN_ID}`}</small>
-        {' | '}
-        <small>{`Msg Ver: ${MSG_VERSION}`}</small>
-        {' | '}
-        <small>{`Node URL: ${NODE_URL}`}</small>
-      </div>
-      <div className="container">
-        <Row className="pt-4">
-          <Col xs={6} sm={6} md={6} lg={6} className="ml-auto mr-auto text-center">
-            <Disclaimer />
-          </Col>
-        </Row>
-      </div>
+      <Faucet zilContext={zilContext} />
     </Layout>
   );
 };
