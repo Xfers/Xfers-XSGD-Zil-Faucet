@@ -15,9 +15,9 @@ exports[`matches the snapshot 1`] = `
         class="nav-item"
       >
         <a
-          aria-label="Zilliqa GitHub"
+          aria-label="Xfers GitHub"
           class="text-secondary nav-link"
-          href="https://github.com/Zilliqa"
+          href="https://github.com/Xfers"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -40,34 +40,9 @@ exports[`matches the snapshot 1`] = `
         class="nav-item"
       >
         <a
-          aria-label="Zilliqa Gitter"
+          aria-label="Xfers Twitter"
           class="text-secondary nav-link"
-          href="https://gitter.im/Zilliqa"
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <svg
-            fill="currentColor"
-            height="1em"
-            stroke="currentColor"
-            stroke-width="0"
-            viewBox="0 0 384 512"
-            width="1em"
-            xmlns="http://www.w3.org/2000/svg"
-          >
-            <path
-              d="M66.4 322.5H16V0h50.4v322.5zM166.9 76.1h-50.4V512h50.4V76.1zm100.6 0h-50.4V512h50.4V76.1zM368 76h-50.4v247H368V76z"
-            />
-          </svg>
-        </a>
-      </li>
-      <li
-        class="nav-item"
-      >
-        <a
-          aria-label="Zilliqa Twitter"
-          class="text-secondary nav-link"
-          href="https://twitter.com/zilliqa"
+          href="https://twitter.com/xfers"
           rel="noopener noreferrer"
           target="_blank"
         >
@@ -90,7 +65,15 @@ exports[`matches the snapshot 1`] = `
     <span
       class="text-secondary copyright"
     >
-      Copyright © 2019 Zilliqa Research Pte. Ltd.
+      Copyright © 2020 Xfers Pte. Ltd.
+      <br />
+      Forked from 
+      <a
+        href="https://github.com/Zilliqa/nucleus-wallet"
+      >
+        Nucleus Wallet
+      </a>
+      .
     </span>
   </div>
 </footer>

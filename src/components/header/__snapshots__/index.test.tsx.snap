@@ -10,79 +10,26 @@ exports[`matches the snapshot 1`] = `
         class="navbar-brand"
         href="/"
       >
-        Nucleus Wallet
+        XSGD Faucet
         <small
           class="release-text"
         >
           beta
         </small>
       </a>
-      <button
-        aria-label="toggler"
-        class="navbar-toggler"
-        type="button"
+      <ul
+        class="ml-auto nav"
       >
         <span
-          class="navbar-toggler-icon"
-        />
-      </button>
-      <div
-        class="collapse navbar-collapse"
-      >
-        <ul
-          class="ml-auto navbar-nav"
+          class="nav-link"
         >
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/home"
-            >
-              Home
-            </a>
-          </li>
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/generate"
-            >
-              Create New Wallet
-            </a>
-          </li>
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/send"
-            >
-              Send ZIL
-            </a>
-          </li>
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/faucet"
-            >
-              ZIL Faucet
-            </a>
-          </li>
           <span
-            class="nav-link"
+            class="network"
           >
-            <span
-              class="network"
-            >
-              Dev Testnet
-            </span>
+            Dev Testnet
           </span>
-        </ul>
-      </div>
+        </span>
+      </ul>
     </nav>
   </div>
 </div>
@@ -98,84 +45,26 @@ exports[`matches the snapshot 2`] = `
         class="navbar-brand"
         href="/"
       >
-        Nucleus Wallet
+        XSGD Faucet
         <small
           class="release-text"
         >
           beta
         </small>
       </a>
-      <button
-        aria-label="toggler"
-        class="navbar-toggler"
-        type="button"
+      <ul
+        class="ml-auto nav"
       >
         <span
-          class="navbar-toggler-icon"
-        />
-      </button>
-      <div
-        class="collapse navbar-collapse"
-      >
-        <ul
-          class="ml-auto navbar-nav"
+          class="nav-link"
         >
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/home"
-            >
-              Home
-            </a>
-          </li>
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/generate"
-            >
-              Create New Wallet
-            </a>
-          </li>
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/send"
-            >
-              Send ZIL
-            </a>
-          </li>
-          <li
-            class="sidebar-link nav-item"
-          >
-            <a
-              class="nav-link"
-              href="/faucet"
-            >
-              ZIL Faucet
-            </a>
-          </li>
-          <a
-            class="cursor-pointer nav-link"
-          >
-            Sign Out
-          </a>
           <span
-            class="nav-link"
+            class="network"
           >
-            <span
-              class="network"
-            >
-              Dev Testnet
-            </span>
+            Dev Testnet
           </span>
-        </ul>
-      </div>
+        </span>
+      </ul>
     </nav>
   </div>
 </div>
