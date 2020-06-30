@@ -15,11 +15,9 @@
  * nucleus-wallet.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-import React, { useState } from 'react';
-import { Navbar, Nav, NavItem, NavLink, NavbarBrand, Collapse, NavbarToggler } from 'reactstrap';
+import React from 'react';
+import { Navbar, Nav, NavbarBrand } from 'reactstrap';
 import './style.css';
-import { Link } from 'react-router-dom';
-import { paths } from '../../routes';
 
 interface IProps {
   isAuth: boolean;
@@ -27,50 +25,22 @@ interface IProps {
 }
 
 const Header: React.FunctionComponent<IProps> = ({ isAuth, clearAuth }) => {
-  const [isOpen, setOpen] = useState(false);
 
   return (
     <div>
       <Navbar fixed={'top'} dark={true} color="dark" expand="sm">
         <NavbarBrand href="/">
-          {'Nucleus Wallet'}
+          {'XSGD Faucet'}
           <small className="release-text">{'beta'}</small>
         </NavbarBrand>
 
-        <NavbarToggler onClick={() => setOpen(!isOpen)} aria-label="toggler" />
 
-        <Collapse isOpen={isOpen} navbar={true}>
-          <Nav className="ml-auto" navbar={true}>
-            <NavItem className="sidebar-link">
-              <Link to={paths.home} className={`nav-link`}>
-                {'Home'}
-              </Link>
-            </NavItem>
-            <NavItem className="sidebar-link">
-              <Link to={paths.generate} className={`nav-link`}>
-                {'Create New Wallet'}
-              </Link>
-            </NavItem>
-            <NavItem className="sidebar-link">
-              <Link to={paths.send} className={`nav-link`}>
-                {'Send ZIL'}
-              </Link>
-            </NavItem>
-            <NavItem className="sidebar-link">
-              <Link to={paths.faucet} className={`nav-link`}>
-                {'ZIL Faucet'}
-              </Link>
-            </NavItem>
-            {isAuth ? (
-              <NavLink className="cursor-pointer" onClick={clearAuth}>
-                {'Sign Out'}
-              </NavLink>
-            ) : null}
+          <Nav className="ml-auto">
+            
             <span className="nav-link">
               <span className="network">{'Dev Testnet'}</span>
             </span>
           </Nav>
-        </Collapse>
       </Navbar>
     </div>
   );
