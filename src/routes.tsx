@@ -25,10 +25,6 @@ import Spinner from './components/spinner';
 import { ZilProvider, ZilContext } from './contexts/zil-context';
 
 export const paths = {
-  faucet: '/faucet',
-  send: '/send',
-  generate: '/generate',
-  calculate: '/calculate',
   home: '/home'
 };
 
@@ -48,7 +44,6 @@ export const RouterNode = () => (
             component: Home
           },
         ];
-
         return (
           <Router>
             <Suspense fallback={<Fallback />}>
