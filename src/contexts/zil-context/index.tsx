@@ -21,7 +21,7 @@ import { fromBech32Address } from '@zilliqa-js/crypto';
 const getHost = (host: string) => {
   switch (host) {
     default:
-      return 'https://nucleus-server.zilliqa.com';
+      return 'http://localhost:8000';
   }
 };
 const initialState: any = {
@@ -34,8 +34,8 @@ export class ZilProvider extends React.Component {
   public faucet = async ({ args, signal }): Promise<string | void> => {
     const { token, toAddress } = args;
     const address = fromBech32Address(toAddress);
-    const body = JSON.stringify({ address, token });
-    const res = await fetch(`${getHost(window.location.hostname)}/api/v1/run`, {
+    const body = JSON.stringify({ ToAddress: address, Amount: 5 });
+    const res = await fetch(`${getHost(window.location.hostname)}/faucet/send`, {
       signal,
       method: 'POST',
       headers: {
@@ -45,7 +45,7 @@ export class ZilProvider extends React.Component {
     });
     if (!res.ok) throw new Error('Failed to run faucet, you may have reached maximum request limit.');
     const data = await res.json();
-    return data ? data.txId : undefined;
+    return data ? data.Data.ID : undefined;
   };
 
   public render() {

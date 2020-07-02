@@ -21,12 +21,9 @@ import { getTxExplorerURL } from '../../utils';
 const FaucetComplete: React.SFC<{ txId: string }> = ({ txId }) => (
   <div data-testid="faucet-complete">
     <p className="pt-4 text-secondary">
-      <span className="text-primary">{'Transaction In Process'}</span>
+      <span className="text-primary">{'Transaction Is Mined'}</span>
       <br />
-      <br />
-      <small>{'Your transaction is pending blockchain confirmation.'}</small>
-      <br />
-      <small>{'Please check after a few minutes.'}</small>
+      <small>{'Your transaction has been broadcasted and mined successfully.'}</small>
     </p>
     {txId ? (
       <u>
