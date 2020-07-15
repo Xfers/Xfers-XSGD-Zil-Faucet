@@ -21,7 +21,7 @@ import { fromBech32Address } from '@zilliqa-js/crypto';
 const getHost = (host: string) => {
   switch (host) {
     default:
-      return 'http://localhost:8000';
+      return 'https://faucet.internal.xfers.com';
   }
 };
 const initialState: any = {
