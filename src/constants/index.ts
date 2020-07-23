@@ -22,13 +22,12 @@ export enum requestStatus {
 }
 
 export const faucetHostnameList: string[] = [
-  'dev-wallet.zilliqa.com',
-  'nucleus-wallet.firebaseapp.com',
+  'faucet.xfers.com',
   'localhost',
   '127.0.0.1'
 ];
 
-export const CAPTCHA_SITE_KEY: string = '6LdazYoUAAAAAIJDC8m5PSMp2mcmSmzgt7pxU6IG';
+export const CAPTCHA_SITE_KEY: string = '6Lda9LQZAAAAAJAKj9NYtNucXKhG5_DhwZ36w_mK';
 export const NETWORK: string = 'Dev Testnet';
 
 export const CHAIN_ID: number =
