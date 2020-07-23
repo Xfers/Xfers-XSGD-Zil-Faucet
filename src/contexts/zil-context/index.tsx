@@ -34,7 +34,7 @@ export class ZilProvider extends React.Component {
   public faucet = async ({ args, signal }): Promise<string | void> => {
     const { token, toAddress } = args;
     const address = fromBech32Address(toAddress);
-    const body = JSON.stringify({ ToAddress: address, Amount: 5 });
+    const body = JSON.stringify({ ToAddress: address });
     const res = await fetch(`${getHost(window.location.hostname)}/faucet/send`, {
       signal,
       method: 'POST',
