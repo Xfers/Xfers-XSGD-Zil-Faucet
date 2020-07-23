@@ -25,7 +25,7 @@ import Spinner from './components/spinner';
 import { ZilProvider, ZilContext } from './contexts/zil-context';
 
 export const paths = {
-  home: '/home'
+  home: '/'
 };
 
 const Fallback = () => (
